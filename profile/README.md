@@ -92,7 +92,7 @@ Every failure in local dev or testing is a lesson that hardens our architecture 
 ### `> HACKATHON MODE`
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/tech-team-ko-bulao/.github/main/profile/assets/hackathon.svg" alt="Hackathon Mode Panel" width="100%" />
+  <img src="https://raw.githubusercontent.com/tech-team-ko-bulao/.github/main/profile/assets/hackathon-mode.svg" alt="Hackathon Mode Panel" width="100%" />
 </div>
 
 When hackathon clocks start ticking, our priority shifts to pure execution:
