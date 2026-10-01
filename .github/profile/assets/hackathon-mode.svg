@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 145" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E0A12"/>
+      <stop offset="50%" stop-color="#0A0A0E"/>
+      <stop offset="100%" stop-color="#081014"/>
+    </linearGradient>
+
+    <linearGradient id="neonBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3366"/>
+      <stop offset="35%" stop-color="#F59E0B"/>
+      <stop offset="70%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A3E635"/>
+    </linearGradient>
+
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .radar {
+        animation: radarSweep 6s linear infinite;
+        transform-origin: 820px 72px;
+      }
+
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; }
+      }
+      .glow-text {
+        animation: pulseGlow 2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect width="900" height="145" rx="14" fill="url(#hBg)" stroke="url(#neonBorder)" stroke-width="1.4"/>
+
+  <!-- Left Cyber Bar Accent -->
+  <rect x="0" y="24" width="4" height="97" fill="#FF3366"/>
+
+  <!-- Content -->
+  <g transform="translate(36, 32)">
+    <!-- Header with Icon -->
+    <g transform="translate(0, 0)">
+      <rect width="185" height="26" rx="6" fill="#20111A" stroke="#FF3366" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="14" y="17" class="mono" font-size="11" font-weight="800" fill="#FF4D79" letter-spacing="1">⚡ HACKATHON MODE</text>
+      <text x="200" y="17" class="mono" font-size="11" fill="#71717A">// SPEED • CLARITY • EXECUTION</text>
+    </g>
+
+    <!-- Main Tagline Track -->
+    <g transform="translate(0, 48)">
+      <text x="0" y="0" class="mono" font-size="18" font-weight="900" fill="#FFFFFF" letter-spacing="2">THINK</text>
+      <text x="75" y="-1" class="mono" font-size="16" font-weight="700" fill="#FF3366">━━&gt;</text>
+      <text x="125" y="0" class="mono" font-size="18" font-weight="900" fill="#FFFFFF" letter-spacing="2">BUILD</text>
+      <text x="200" y="-1" class="mono" font-size="16" font-weight="700" fill="#F59E0B">━━&gt;</text>
+      <text x="250" y="0" class="mono" font-size="18" font-weight="900" fill="#FFFFFF" letter-spacing="2">TEST</text>
+      <text x="315" y="-1" class="mono" font-size="16" font-weight="700" fill="#00F0FF">━━&gt;</text>
+      <text x="365" y="0" class="mono glow-text" font-size="18" font-weight="900" fill="#00FF66" letter-spacing="2">SHIP</text>
+    </g>
+
+    <!-- Quote / Motto -->
+    <g transform="translate(0, 80)">
+      <text x="0" y="0" class="sans" font-size="13" font-weight="500" fill="#A1A1AA">
+        Turn caffeine into code. Eliminate friction. Deploy working software before the final buzzer.
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Side Cyber Radar -->
+  <g>
+    <circle cx="820" cy="72" r="32" fill="#090E16" stroke="#27272A" stroke-width="1"/>
+    <circle cx="820" cy="72" r="20" fill="none" stroke="#00F0FF" stroke-width="0.8" stroke-opacity="0.4"/>
+    <circle cx="820" cy="72" r="8" fill="none" stroke="#00FF66" stroke-width="1" stroke-opacity="0.7"/>
+    <line x1="820" y1="40" x2="820" y2="104" stroke="#27272A" stroke-width="0.8"/>
+    <line x1="788" y1="72" x2="852" y2="72" stroke="#27272A" stroke-width="0.8"/>
+    <line class="radar" x1="820" y1="72" x2="848" y2="52" stroke="#00F0FF" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="820" cy="72" r="2.5" fill="#00F0FF"/>
+  </g>
+</svg>
