@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D0E12"/>
+      <stop offset="100%" stop-color="#08080B"/>
+    </linearGradient>
+
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+      
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .cursor {
+        animation: blink 0.9s infinite;
+      }
+
+      @keyframes pulseGreen {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+      .live-dot {
+        animation: pulseGreen 1.8s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Shell Container -->
+  <rect width="900" height="220" rx="14" fill="url(#termBg)" stroke="#26262E" stroke-width="1.2"/>
+
+  <!-- Titlebar -->
+  <path d="M 0 14 Q 0 0 14 0 L 886 0 Q 900 0 900 14 L 900 36 L 0 36 Z" fill="#13141A"/>
+  <line x1="0" y1="36" x2="900" y2="36" stroke="#22222A" stroke-width="1"/>
+
+  <!-- Window Buttons -->
+  <circle cx="24" cy="18" r="5" fill="#EF4444" opacity="0.85"/>
+  <circle cx="42" cy="18" r="5" fill="#F59E0B" opacity="0.85"/>
+  <circle cx="60" cy="18" r="5" fill="#10B981" opacity="0.85"/>
+
+  <!-- Window Title -->
+  <text x="450" y="22" text-anchor="middle" class="mono" font-size="11.5" fill="#A1A1AA" letter-spacing="0.5">terminal@tech-team-ko-bulao:~$ ./current-sprint.sh</text>
+
+  <!-- Live Status Badge -->
+  <circle class="live-dot" cx="820" cy="18" r="3.5" fill="#00FF66"/>
+  <text x="830" y="21" class="mono" font-size="10" font-weight="700" fill="#00FF66">ACTIVE</text>
+
+  <!-- Terminal Content Lines -->
+  <g transform="translate(28, 62)">
+    <!-- Header -->
+    <text x="0" y="0" class="mono" font-size="12" font-weight="700" fill="#00F0FF">[STATUS // ACTIVE]</text>
+    <text x="145" y="0" class="mono" font-size="12" fill="#71717A">Engineering sprint in progress</text>
+
+    <!-- Item 01 -->
+    <text x="0" y="25" class="mono" font-size="12" font-weight="700" fill="#A3E635">01 →</text>
+    <text x="35" y="25" class="mono" font-size="12" fill="#E4E4E7">Preparing for hackathons &amp; rapid MVP prototyping</text>
+
+    <!-- Item 02 -->
+    <text x="0" y="47" class="mono" font-size="12" font-weight="700" fill="#00F0FF">02 →</text>
+    <text x="35" y="47" class="mono" font-size="12" fill="#E4E4E7">Building full-stack projects, real-time APIs &amp; modern interfaces</text>
+
+    <!-- Item 03 -->
+    <text x="0" y="69" class="mono" font-size="12" font-weight="700" fill="#818CF8">03 →</text>
+    <text x="35" y="69" class="mono" font-size="12" fill="#E4E4E7">Exploring AI/ML applications, LLM APIs &amp; intelligent tools</text>
+
+    <!-- Item 04 -->
+    <text x="0" y="91" class="mono" font-size="12" font-weight="700" fill="#FB923C">04 →</text>
+    <text x="35" y="91" class="mono" font-size="12" fill="#E4E4E7">DSA drills, core CS fundamentals &amp; problem solving</text>
+
+    <!-- Item 05 -->
+    <text x="0" y="113" class="mono" font-size="12" font-weight="700" fill="#C084FC">05 →</text>
+    <text x="35" y="113" class="mono" font-size="12" fill="#E4E4E7">Disciplined peer code reviews, Git branching &amp; open source</text>
+
+    <!-- Prompt / Cursor Line -->
+    <text x="0" y="138" class="mono" font-size="12" font-weight="700" fill="#00F0FF">&gt; team@tech-team-ko-bulao:~$</text>
+    <rect class="cursor" x="220" y="126" width="7.5" height="15" fill="#00F0FF"/>
+  </g>
+</svg>
