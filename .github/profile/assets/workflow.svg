@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0B0E"/>
+      <stop offset="100%" stop-color="#08080A"/>
+    </linearGradient>
+
+    <linearGradient id="flowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="30%" stop-color="#3B82F6"/>
+      <stop offset="55%" stop-color="#A3E635"/>
+      <stop offset="75%" stop-color="#F97316"/>
+      <stop offset="90%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#00FF66"/>
+    </linearGradient>
+
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+      @keyframes pulseDash {
+        to { stroke-dashoffset: -28; }
+      }
+      .anim-dash {
+        stroke-dasharray: 6, 8;
+        animation: pulseDash 1.2s linear infinite;
+      }
+      
+      @keyframes nodePulse {
+        0%, 100% { transform: scale(1); opacity: 0.9; }
+        50% { transform: scale(1.08); opacity: 1; }
+      }
+      .pulse-node {
+        animation: nodePulse 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect width="900" height="130" rx="14" fill="url(#wfBg)" stroke="#222228" stroke-width="1.2"/>
+
+  <!-- Top Micro-bar -->
+  <g transform="translate(25, 18)">
+    <text x="0" y="0" class="mono" font-size="10.5" font-weight="700" fill="#71717A" letter-spacing="1.5">PIPELINE // HOW WE SHIP</text>
+    <text x="850" y="0" text-anchor="end" class="mono" font-size="10" fill="#52525B">CYCLE : CONTINUOUS</text>
+  </g>
+
+  <!-- Connecting Animated Dash Track -->
+  <line x1="80" y1="68" x2="820" y2="68" stroke="url(#flowLine)" stroke-width="2.5" class="anim-dash" stroke-linecap="round"/>
+
+  <!-- Nodes -->
+  <!-- 01: IDEA -->
+  <g transform="translate(80, 68)">
+    <circle r="19" fill="#10151E" stroke="#00F0FF" stroke-width="1.8"/>
+    <text y="4" text-anchor="middle" class="mono" font-size="9" font-weight="800" fill="#00F0FF">01</text>
+    <text y="32" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#FFFFFF">IDEA</text>
+    <text y="44" text-anchor="middle" class="sans" font-size="9.5" fill="#71717A">Spark</text>
+  </g>
+
+  <!-- 02: RESEARCH -->
+  <g transform="translate(225, 68)">
+    <circle r="19" fill="#111626" stroke="#3B82F6" stroke-width="1.8"/>
+    <text y="4" text-anchor="middle" class="mono" font-size="9" font-weight="800" fill="#60A5FA">02</text>
+    <text y="32" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#FFFFFF">RESEARCH</text>
+    <text y="44" text-anchor="middle" class="sans" font-size="9.5" fill="#71717A">Explore</text>
+  </g>
+
+  <!-- 03: BUILD -->
+  <g transform="translate(370, 68)">
+    <circle r="19" fill="#131B15" stroke="#A3E635" stroke-width="1.8"/>
+    <text y="4" text-anchor="middle" class="mono" font-size="9" font-weight="800" fill="#A3E635">03</text>
+    <text y="32" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#FFFFFF">BUILD</text>
+    <text y="44" text-anchor="middle" class="sans" font-size="9.5" fill="#71717A">Prototype</text>
+  </g>
+
+  <!-- 04: BREAK -->
+  <g transform="translate(515, 68)">
+    <circle r="19" fill="#1E1513" stroke="#F97316" stroke-width="1.8"/>
+    <text y="4" text-anchor="middle" class="mono" font-size="9" font-weight="800" fill="#FB923C">04</text>
+    <text y="32" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#FFFFFF">BREAK</text>
+    <text y="44" text-anchor="middle" class="sans" font-size="9.5" fill="#71717A">Stress-Test</text>
+  </g>
+
+  <!-- 05: FIX -->
+  <g transform="translate(660, 68)">
+    <circle r="19" fill="#191322" stroke="#8B5CF6" stroke-width="1.8"/>
+    <text y="4" text-anchor="middle" class="mono" font-size="9" font-weight="800" fill="#C084FC">05</text>
+    <text y="32" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#FFFFFF">FIX</text>
+    <text y="44" text-anchor="middle" class="sans" font-size="9.5" fill="#71717A">Refactor</text>
+  </g>
+
+  <!-- 06: SHIP -->
+  <g transform="translate(805, 68)">
+    <circle r="21" fill="#0E1D13" stroke="#00FF66" stroke-width="2.2"/>
+    <text y="4" text-anchor="middle" class="mono" font-size="9.5" font-weight="900" fill="#00FF66">06</text>
+    <text y="34" text-anchor="middle" class="mono" font-size="12" font-weight="800" fill="#00FF66">SHIP</text>
+    <text y="46" text-anchor="middle" class="sans" font-size="9.5" font-weight="600" fill="#86EFAC">Deploy</text>
+  </g>
+</svg>
