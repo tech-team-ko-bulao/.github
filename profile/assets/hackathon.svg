@@ -59,7 +59,7 @@
       <text x="200" y="-1" class="mono" font-size="16" font-weight="700" fill="#F59E0B">━━&gt;</text>
       <text x="250" y="0" class="mono" font-size="18" font-weight="900" fill="#FFFFFF" letter-spacing="2">TEST</text>
       <text x="315" y="-1" class="mono" font-size="16" font-weight="700" fill="#00F0FF">━━&gt;</text>
-      <text x="365" y="0" class="mono" font-size="18" font-weight="900" fill="#00FF66" letter-spacing="2" class="glow-text">SHIP</text>
+      <text x="365" y="0" class="mono glow-text" font-size="18" font-weight="900" fill="#00FF66" letter-spacing="2">SHIP</text>
     </g>
 
     <!-- Quote / Motto -->
