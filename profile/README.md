@@ -5,7 +5,7 @@
 <br/>
 
 [![Status](https://img.shields.io/badge/STATUS-ACTIVE%20BUILDING-00F0FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0D0E12)](https://github.com/tech-team-ko-bulao)
-[![Team Size](https://img.shields.io/badge/SQUAD-5%20BUILDERS-A3E635?style=for-the-badge&labelColor=0D0E12)](https://github.com/orgs/tech-team-ko-bulao/people)
+[![Team Size](https://img.shields.io/badge/SQUAD-4%20BUILDERS-A3E635?style=for-the-badge&labelColor=0D0E12)](https://github.com/orgs/tech-team-ko-bulao/people)
 [![Roadmap](https://img.shields.io/badge/PROJECTS-ROADMAP%20V2-818CF8?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=0D0E12)](https://github.com/orgs/tech-team-ko-bulao/projects/1)
 [![Workflow](https://img.shields.io/badge/WORKFLOW-PR%20PROTECTED-F97316?style=for-the-badge&logo=git&logoColor=white&labelColor=0D0E12)](https://github.com/tech-team-ko-bulao/team-playground)
 
@@ -15,7 +15,7 @@
 
 ### `> WHO WE ARE`
 
-> **We’re a five-member college tech squad exploring hackathons, AI/ML, full-stack development, DSA, and open source — learning by actually building.**
+> **We’re a four-member college tech squad exploring hackathons, AI/ML, full-stack development, DSA, and open source — learning by actually building.**
 
 We are undergraduate students passionate about shipping practical software, deconstructing complex systems, and competing in high-velocity developer hackathons. No corporate bureaucracy, no synthetic metrics—just raw engineering curiosity, disciplined collaboration, and rapid iterative progress.
 
@@ -134,7 +134,6 @@ We treat student projects with real-world engineering discipline:
 | **Aditya** | Teammate • Engineering & Development | [@aditya2782](https://github.com/aditya2782) |
 | **Nishanth Kumar** | Teammate • Engineering & Development | [@nishanthkumard-source](https://github.com/nishanthkumard-source) |
 | **Pavan** | Teammate • Engineering & Development | [@Pavan-lazydog](https://github.com/Pavan-lazydog) |
-| **Member 05** | Teammate • Upcoming Squad Member | *[Pending Invitation]* |
 
 ---
 
